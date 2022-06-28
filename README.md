@@ -11,7 +11,7 @@ This is achieved by declaring /defining abstractions, or interfaces in the Appli
 Project Structure:
 The Web API contains 4 projects -
 *NW.LondonStock.API – Which acts as the Presentation / Controller layer for making the Http Get calls to fetch the desired data.
-*NW.LondonStock.Core – Core Layer with business logics and Validations.
+*NW.LondonStock.Core – Core Layer with business logics, Validations and pass data between the layers.
 *NW.LondonStock.Infrastructure – Data Access Layer for Database connectivity and accessing other third party services.
 *NW.LondonStock.UnitTests – Followed TDD approach  to unit test  all the changes. 
 
