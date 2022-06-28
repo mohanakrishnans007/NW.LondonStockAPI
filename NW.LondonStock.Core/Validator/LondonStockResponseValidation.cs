@@ -1,10 +1,6 @@
 ﻿using NW.LondonStock.Core.Constants;
 using NW.LondonStock.Core.DTO;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NW.LondonStock.Core.Validator
 {
@@ -20,7 +16,7 @@ namespace NW.LondonStock.Core.Validator
             {
                 error.Add(new Error
                 {
-                    ErrorCode = ValidationErrorConstants.BrokerIDMandatoryErrorCode
+                    ErrorMessage = ValidationErrorConstants.BrokerIDMandatoryErrorCode
                 });
             }
 
@@ -29,7 +25,7 @@ namespace NW.LondonStock.Core.Validator
             {
                 error.Add(new Error
                 {
-                    ErrorCode = ValidationErrorConstants.NoOfSharesMandatoryErrorCode
+                    ErrorMessage = ValidationErrorConstants.NoOfSharesMandatoryErrorCode
                 });
             }
 
@@ -37,7 +33,7 @@ namespace NW.LondonStock.Core.Validator
             {
                 error.Add(new Error
                 {
-                    ErrorCode = ValidationErrorConstants.PriceMandatoryErrorCode
+                    ErrorMessage = ValidationErrorConstants.PriceMandatoryErrorCode
                 });
             }
 
@@ -45,7 +41,7 @@ namespace NW.LondonStock.Core.Validator
             {
                 error.Add(new Error
                 {
-                    ErrorCode = ValidationErrorConstants.TickerSymbolMandatoryErrorCode
+                    ErrorMessage = ValidationErrorConstants.TickerSymbolMandatoryErrorCode
                 });
             }
             return error;

@@ -8,7 +8,7 @@ namespace NW.LondonStock.Core.DTO
 {
    public class Error
     {
-        //Error Code
-        public string ErrorCode { get; set; }
+        //Error Message
+        public string ErrorMessage { get; set; }
     }
 }

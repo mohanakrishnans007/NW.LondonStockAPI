@@ -1,9 +1,5 @@
 ﻿using NW.LondonStock.Core.DTO;
 using NW.LondonStock.Core.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using Oracle.ManagedDataAccess.Client;

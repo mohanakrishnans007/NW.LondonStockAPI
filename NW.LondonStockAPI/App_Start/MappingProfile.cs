@@ -1,16 +1,12 @@
 ﻿using AutoMapper;
 using NW.LondonStock.Core.DTO;
 using NW.LondonStockAPI.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace NW.LondonStockAPI.App_Start
 {
     /// <inheritdoc />
     /// <summary>
-    /// 
+    /// MappingProfile - to access Automapper 
     /// </summary>
     public class MappingProfile :Profile
     {

@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace NW.LondonStock.Core.Constants
 {
    public static class ValidationErrorConstants
     {
-        public const string BrokerIDMandatoryErrorCode = "Error1000";
-        public const string NoOfSharesMandatoryErrorCode = "Error1001";
-        public const string PriceMandatoryErrorCode = "Error1002";
-        public const string TickerSymbolMandatoryErrorCode = "Error1003";
+        public const string BrokerIDMandatoryErrorCode = "Error1000 : Broker ID is mandatory";
+        public const string NoOfSharesMandatoryErrorCode = "Error1001 : No Of Shares is mandatory";
+        public const string PriceMandatoryErrorCode = "Error1002 : Price is mandatory";
+        public const string TickerSymbolMandatoryErrorCode = "Error1003 : Ticker Symbol is mandatory";
 
     }
 }

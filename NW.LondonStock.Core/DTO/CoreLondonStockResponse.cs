@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace NW.LondonStock.Core.DTO
 {
-   public class CoreLondonStockResponse
+    public class CoreLondonStockResponse
     {
         public string TickerSymbol { get; set; }
 

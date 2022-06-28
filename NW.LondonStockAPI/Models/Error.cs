@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace NW.LondonStockAPI.Models
+﻿namespace NW.LondonStockAPI.Models
 {
     /// <summary>
     /// This class contains Error Code and Message

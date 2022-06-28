@@ -3,9 +3,6 @@ using NW.LondonStock.Core.DTO;
 using NW.LondonStock.Core.Interfaces;
 using NW.LondonStockAPI.Constants;
 using NW.LondonStockAPI.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -56,6 +53,10 @@ namespace NW.LondonStockAPI.Controllers
             };
 
             var londonStockSearchResopnse = await _londonStockService.GetStockDetails(stockApiRequest);
+            if (londonStockSearchResopnse.Errors.Count > 0)
+            {
+                return Request.CreateResponse(HttpStatusCode.Forbidden, londonStockSearchResopnse.Errors);
+            }
 
             if (londonStockSearchResopnse != null)
             {
