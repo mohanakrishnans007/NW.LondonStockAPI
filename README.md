@@ -20,3 +20,16 @@ So we can Also use swagger to check the API :
 
 http://localhost:55761/swagger/ui/index
 
+
+Sample Request and Response :
+
+Request:
+http://localhost:55761/api/v1/TickerSymbol/AAPL
+
+Response:
+{
+  "TickerSymbol": "AAPL",
+  "Price": 5000,
+  "NoOfShares": 100,
+  "BrokerID": "Broker123"
+}

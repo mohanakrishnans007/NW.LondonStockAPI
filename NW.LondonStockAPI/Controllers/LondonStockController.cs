@@ -53,9 +53,9 @@ namespace NW.LondonStockAPI.Controllers
             };
 
             var londonStockSearchResopnse = await _londonStockService.GetStockDetails(stockApiRequest);
-            if (londonStockSearchResopnse.Errors.Count > 0)
+            if (londonStockSearchResopnse?.Errors?.Count > 0)
             {
-                return Request.CreateResponse(HttpStatusCode.Forbidden, londonStockSearchResopnse.Errors);
+                return Request.CreateResponse(HttpStatusCode.Forbidden, londonStockSearchResopnse?.Errors);
             }
 
             if (londonStockSearchResopnse != null)
